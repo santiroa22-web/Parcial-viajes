@@ -13,11 +13,11 @@ class HomeViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(HomeUiState())
     val uiState: StateFlow<HomeUiState> = _uiState.asStateFlow()
 
-    fun navigateTo(route: AppRoute, tripTitle: String? = null) {
+    fun navigateTo(route: AppRoute, tripId: Int? = null) {
         _uiState.update { state ->
             state.copy(
                 currentRoute = route,
-                selectedTripTitle = tripTitle ?: state.selectedTripTitle
+                selectedTripId = tripId ?: state.selectedTripId
             )
         }
     }
