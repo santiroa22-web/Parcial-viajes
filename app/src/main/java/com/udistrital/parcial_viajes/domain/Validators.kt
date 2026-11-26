@@ -1,4 +1,4 @@
-package com.udistrital.parcial_viajes.domain
+    package com.udistrital.parcial_viajes.domain
 
 import com.udistrital.parcial_viajes.model.NewExpenseInput
 import com.udistrital.parcial_viajes.model.NewTripInput
